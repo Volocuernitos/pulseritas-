@@ -1,0 +1,278 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ff1493;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    background: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-detalle {
+    display: inline-block;
+    background-color: #ff1493;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-detalle:hover {
+    background-color: #e91e63;
+}
+
+footer {
+    background-color: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    text-align: center;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #ff69b4;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+    body {
+        font-family: 'Georgia', serif;
+        background-color: #f0f2ff;
+    }
+    
+   
+    header {
+        background: linear-gradient(135deg, #6b73ff 0%, #9b59b6 100%);
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+        margin: 10px 0;
+    }
+    
+    nav ul {
+        background: linear-gradient(135deg, #5a67d8 0%, #8b5cf6 100%);
+        padding: 10px 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 8px;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+  
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery-item {
+        width: 90%;
+        max-width: 300px;
+        margin: 10px;
+        background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%);
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 4px 15px rgba(107, 115, 255, 0.1);
+    }
+    
+    .gallery-item img {
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .gallery-item h3 {
+        color: #6b73ff;
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+    
+    .gallery-item p {
+        color: #4a5568;
+        font-size: 0.9em;
+        margin: 5px 0;
+    }
+    
+  
+    .btn-detalle {
+        background: linear-gradient(135deg, #6b73ff 0%, #9b59b6 100%);
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        margin-top: 12px;
+        font-size: 0.9em;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+    
+    .btn-detalle:hover {
+        background: linear-gradient(135deg, #5a67d8 0%, #8b5cf6 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(107, 115, 255, 0.3);
+    }
+    
+    footer {
+        background: linear-gradient(135deg, #6b73ff 0%, #9b59b6 100%);
+        padding: 15px;
+    }
+    
+   
+    .info h2, .nosotros h2, .contacto h2 {
+        color: #6b73ff;
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+    
+    .info p, .nosotros p, .contacto p {
+        color: #4a5568;
+        line-height: 1.6;
+        font-size: 1em;
+        margin: 15px 0;
+    }
+    
+   
+    table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    
+    table th {
+        background: linear-gradient(135deg, #6b73ff 0%, #9b59b6 100%);
+        color: white;
+        padding: 12px 8px;
+    }
+    
+    table td {
+        padding: 10px 8px;
+        border: 1px solid #e2e8f0;
+    }
+    
+ 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+   
+    .contacto img {
+        width: 60px;
+        margin: 10px;
+    }
+    
+ 
+    section {
+        margin: 20px 0;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+.producto-imagen {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen-principal {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
